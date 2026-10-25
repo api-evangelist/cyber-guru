@@ -1,0 +1,79 @@
+generated: '2026-10-25'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 2
+  other_domain: 3
+  platform: 0
+  roles:
+  - api
+  - partner
+  - support
+  - website
+hosts:
+- host: api.cyberguru.eu
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: cyberguru.eu
+  role: api
+  relation: other-domain
+- host: api.cyberguru.it
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: cyberguru.it
+  role: api
+  relation: own
+- host: partner.cyberguru.eu
+  found_by:
+  - probed
+  - site-links
+  - namespace-probe
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  status: 200
+  registrable_domain: cyberguru.eu
+  role: partner
+  relation: other-domain
+- host: support.cyberguru.eu
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Support
+  serves:
+  - support
+  vendor: zendesk
+  registrable_domain: cyberguru.eu
+  role: support
+  relation: other-domain
+- host: www.cyberguru.it
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Documentation
+  - Blog
+  - PrivacyPolicy
+  serves:
+  - docs
+  - cdn
+  vendor: cloudfront
+  registrable_domain: cyberguru.it
+  role: website
+  relation: own

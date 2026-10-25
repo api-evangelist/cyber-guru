@@ -1,0 +1,30 @@
+generated: '2026-10-25'
+source: https://www.cyberguru.it/privacy-policy/
+method: probed
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://www.cyberguru.it/privacy-policy/
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "accedere ai propri Dati. L’Utente ha diritto ad ottenere informazioni sui Dati trattati dal Titolare, su determinati aspetti del trattamento ed a ricevere una copia dei Dati trattati;"
+        note: User has right to access their data and obtain a copy.
+      - source: https://www.cyberguru.it/privacy-policy/
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "ricevere i propri Dati o farli trasferire ad altro titolare. L’Utente ha diritto di ricevere i propri Dati in formato strutturato, di uso comune e leggibile da dispositivo automatico e, ove tecnicamente fattibile, di ottenerne il trasferimento senza ostacoli ad un altro titolare."
+        note: Right to data portability.
+  complaint:
+    evidence:
+      - source: https://www.cyberguru.it/privacy-policy/
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "DIRITTO DI RECLAMO... hanno il diritto di proporre reclamo al Garante, come previsto dall&#8217;art. 77 del Regolamento stesso, o di adire le opportune sedi giudiziarie (art. 79 del Regolamento)."
+        note: Right to lodge a complaint with supervisory authority.
+  dpo_contact:
+    evidence:
+      - source: https://www.cyberguru.it/privacy-policy/
+        http_status: 200
+        fetched: /tmp/privacy.html
+        quote: "Per qualsiasi problema legato la vostra privacy potete contattare il nostro DPO ai seguenti riferimenti: privacy@cyberguru.it."
+        note: Provides DPO contact information.

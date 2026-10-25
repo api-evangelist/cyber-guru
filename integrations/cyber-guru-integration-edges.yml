@@ -1,0 +1,16 @@
+generated: '2026-10-25'
+method: none
+source:
+- https://zapier.com/apps/cyber-guru/integrations
+- https://n8n.io/integrations/cyber-guru/
+- https://composio.dev/toolkits/cyber-guru
+- https://monid.ai/tools/cyber-guru
+checked:
+- https://composio.dev/toolkits/cyber-guru
+- https://monid.ai/tools/cyber-guru
+- https://n8n.io/integrations/cyber-guru/
+- https://zapier.com/apps/cyber-guru/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

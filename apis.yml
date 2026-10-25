@@ -1,25 +1,64 @@
 aid: cyber-guru
+
 name: Cyber Guru
-description: 'Cyber Guru is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by adaraventurepartners) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.cyberguru.it/wp-content/uploads/2025/11/pillar-Awareness-1.png
+
+description: 'Cyber Guru, now operating under the LibraCyber brand, provides comprehensive cybersecurity awareness and training solutions across Italy and Europe. Their offerings include phishing simulations, real‑time awareness, compliance training, and a cyber advisor platform, targeting enterprises seeking to improve security culture. The company emphasizes a human‑centric approach to cybersecurity, delivering resources such as datasheets, case studies, and a multilingual support portal.'
+
 url: https://raw.githubusercontent.com/api-evangelist/cyber-guru/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-25'
+
 modified: '2026-10-25'
+
 tags:
 - Company
-apis: []
+- Cybersecurity
+- Training
+- Awareness
+- Europe
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- adaraventurepartners
+
 common:
+- type: Hosts
+  url: hosts/cyber-guru-hosts.yml
+- type: Vendors
+  url: vendors/cyber-guru-vendors.yml
+- type: DomainSecurity
+  url: security/cyber-guru-domain-security.yml
 - type: Website
   url: https://www.cyberguru.it
+- type: Documentation
+  url: https://www.cyberguru.it/chi-siamo-cyber-guru-company/
+- type: Blog
+  url: https://www.cyberguru.it/cyber-blog/
+- type: Support
+  url: https://support.cyberguru.eu/hc/it
+- type: PrivacyPolicy
+  url: https://www.cyberguru.it/privacy-cookie-policy
+
+apis: []
+
+x-backed-by:
+- adaraventurepartners
+x-enrichment:
+  date: '2026-10-25'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
